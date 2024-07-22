@@ -12,20 +12,23 @@ Words in the grid can be arranged in four directions - up, down, left or right. 
 
 For example, for given matrix
 
+```
 R A T A
 A I A N
 D I O N
 S Z X A
+```
 and given words "RAT, CAT, DAR, RADIO, RIO" only words RAT and DAR can be found: CAT requires letter "C" which just missing, 
 RADIO requires direction change which is forbidden and RIO requires diagonal movement which is prohibited.
 
 You need to print source matrix, containing only founded words with underscore character in all unused places.
 Given example leads to 
-
+```
 R A T _
 A _ _ _
 D _ _ _
 _ _ _ _
+```
 
 Of course, one letter can be used twice or even more!
 
@@ -43,11 +46,13 @@ You need to print source matrix, containing only founded crossword with undersco
 
 Lets look at new example:
 
+```
 R A T A
 A I A N
 D I O N
 I Z X A
 O M G D
+```
 
 List of words is "RAT, CAT, DAR, RADIO, RIO, ANNA"
 Now you still cant use CAT and RIO, but also you cant use DAR, because it arranged in wrong direction
@@ -55,8 +60,10 @@ Instead you can use vertically arranged RADIO. Added word "ANNA" cant be used fo
 
 Finally, expected output is:
 
+```
 R A T _
 A _ _ _
 D _ _ _
 I _ _ _
 O _ _ _
+```
