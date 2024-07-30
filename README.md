@@ -1,6 +1,6 @@
 # PHP Interview Crosswords
 
-Lets make a crossword!
+Let's make a crossword!
 
 ### Task 1
 
@@ -62,7 +62,7 @@ There are some changes in rules:
 - "Connected" means that words should have one shared letter (in one place, ofc) and the words must be perpendicular.
 - You need to print source matrix, containing only founded crossword with underscore character in all unused places.
 
-Lets look at new example:
+Let's look at new example:
 
 ```
 R A T A
@@ -78,7 +78,7 @@ Now you still cant use CAT and RIO, but also you cant use DAR, because it arrang
 
 Added word "ANNA" also cant be used for crossword, because it is not connected to other words with given rules.
 
-Instead you can use vertically arranged **RADIO**. 
+Instead, you can use vertically arranged **RADIO**. 
 
 Finally, expected output is:
 

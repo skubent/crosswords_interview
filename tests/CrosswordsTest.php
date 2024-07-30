@@ -2,12 +2,12 @@
 
 namespace PhpInterview\Tests;
 
-use PhpInterview\TaskDataProvider;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class CrosswordsTest extends TestCase {
-    #[DataProvider('task1DataProvider')]
+    /**
+     * @dataProvider task1DataProvider()
+     */
     public function testFirstExample(int $i, string $message): void {
         $expectedOutput = file_get_contents(__DIR__ . "/data/task1/test$i");
         exec("php solution1.php {$i}", $output);
@@ -26,7 +26,9 @@ class CrosswordsTest extends TestCase {
         ];
     }
 
-    #[DataProvider('task2DataProvider')]
+    /**
+     * @dataProvider task2DataProvider()
+     */
     public function testSecondExample(int $i, string $message): void {
         $expectedOutput = file_get_contents(__DIR__ . "/data/task2/test$i");
         exec("php solution2.php {$i}", $output);

@@ -16,8 +16,6 @@ if (($testId < 1) || $testId > $dataProvider->getTestsCount()) {
 
 $taskContent = $dataProvider->getTestData($testId);
 
-echo $taskContent->commaSeparatedWordList . "\n";
-
 foreach ($taskContent->lettersMatrix as $row) {
     echo "{$row}\n";
 }
